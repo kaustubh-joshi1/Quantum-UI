@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Rowdies:wght@300;400;700&family=Source+Code+Pro:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- component styles -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Quantum UI | Get Started</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper py-sm">
+        <header class="header max-1200-center p-1">
+          <div class="logo-wrapper">
+            <a href="../index.html" class="logo">
+              <i class="fas fa-spinner"></i> Quantum
+            </a>
+
+            <button class="menu-btn">
+              <i class="fas fa-2x fa-bars" title="Menu"></i>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li class="m-sm">
+                <a href="../index.html" class="border-10">Home</a>
+              </li>
+              <li class="m-sm active">
+                <a href="./get-started.html" class="border-10">Docs</a>
+              </li>
+              <li class="m-sm">
+                <a href="https://github.com/kaustubh-joshi1/" class="border-10">
+                  <i class="fab fa-github-square"></i
+                ></a>
+              </li>
+            </ul>
+
+            <button class="navbar-close-btn">
+              <i class="far fa-2x fa-times-circle" class="border-10"></i>
+              <span class="visually-hidden">Close</span>
+            </button>
+          </nav>
+        </header>
+      </div>
+
+      <!-- main section -->
+      <div class="main-wrapper mx-1 mt-1">
+        <main class="docs-main">
+          <aside class="aside-nav py-1 mt-2">
+            <nav
+              class="aside-navigation pl-sm"
+              aria-label="secondary-navigation"
+            >
+              <ul>
+                <li class="component-dropdown py-sm">
+                  Menu
+                  <span class="dropdown-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Get Started</h5>
+                </li>
+
+                <li>
+                  <a href="./get-started.html">Installation</a>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Components</h5>
+                  <ul>
+                    <li class="m-sm">
+                      <a href="./avatar.html">Avatar</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./alert.html">Alert</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./badge.html">Badge</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./button.html">Button</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./card.html">Card</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./image.html">Image</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./form.html">Forms</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./typography.html">Typograhy</a>
+                    </li>
+
+                    <li class="m-sm">
+                      <a href="./snackbar.html">Snackbar</a>
+                    </li>
+
+                    <li class="m-sm active">
+                      <a href="./grid.html">Grid</a>
+                    </li>
+
+                    <li class="m-sm">
+                      <a href="./navigation.html">Navigation</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="main-content">
+            <section>
+              <div>
+                <h1>Grid</h1>
+
+                <p>
+                  CSS Grid is a two-dimensional grid system used to work on the
+                  layout of UI elements and segments of a webpage. The Grid
+                  comprises horizontal and vertical lines to form rows and
+                  columns, much like a table.
+                </p>
+                <p>
+                  Quantum UI provides four types of grid layouts. Quantum UI
+                  grid layouts are mobile first and responsive.
+                </p>
+              </div>
+
+              <section>
+                <h2 id="grid-20-80">Grid 20-80 layout</h2>
+
+                <p>
+                  If you want to use any container as grid add
+                  <code>.grid</code> class to the container first. To divide the
+                  container into 20-80 percent column use
+                  <code>.grid-20-80</code> class on your grid container. You can
+                  use <code>.gap-1</code> class to add gap of <code>1rem</code>
+                </p>
+
+                <div class="demo-container">
+                  <div class="grid grid-20-80 gap-1">
+                    <div
+                      class="txt-center"
+                      style="border: 1px solid var(--bg-primary)"
+                    >
+                      Column1
+                    </div>
+                    <div
+                      class="txt-center"
+                      style="border: 1px solid var(--bg-primary)"
+                    >
+                      Column 2
+                    </div>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/9e27beec1fcf0271b64ecd1bca41a792.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="grid-50-50">Grid 50-50 layout</h2>
+
+                <p>
+                  The most used grid layout of two equal columns. You can use
+                  <code>.grid-50-50</code> class to create two column grid
+                  layout.
+                </p>
+
+                <div class="demo-container">
+                  <div class="grid grid-50-50 gap-1">
+                    <div
+                      class="txt-center"
+                      style="border: 1px solid var(--bg-primary)"
+                    >
+                      Column1
+                    </div>
+                    <div
+                      class="txt-center"
+                      style="border: 1px solid var(--bg-primary)"
+                    >
+                      Column 2
+                    </div>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/6fe8911480c6a7e55dd0336a1abe439c.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="grid-three-column">Grid three column layout</h2>
+
+                <p>
+                  Another useful grid layout is three equal column layout. Use
+                  <code>.grid-three-column</code> class to create three column
+                  layout. You can use <code>.gap-x-1</code> to add grid gap
+                  horizontally and <code>.gap-y-1</code> to add grip gap
+                  vertically.
+                </p>
+
+                <div class="demo-container">
+                  <div class="grid grid-three-column gap-y-1 gap-x-1">
+                    <div
+                      class="txt-center"
+                      style="border: 1px solid var(--bg-primary)"
+                    >
+                      Column1
+                    </div>
+                    <div
+                      class="txt-center"
+                      style="border: 1px solid var(--bg-primary)"
+                    >
+                      Column 2
+                    </div>
+                    <div
+                      class="txt-center"
+                      style="border: 1px solid var(--bg-primary)"
+                    >
+                      Column 3
+                    </div>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/1728189bdba7b2e8711eae7f868868bd.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <div class="next-pre-btns">
+                <a href="./snackbar.html">
+                  <span><i class="fas fa-chevron-left"></i></span>
+                  Snackbar
+                </a>
+
+                <a href="./navigation.html">
+                  Navigation
+                  <span><i class="fas fa-chevron-right"></i></span>
+                </a>
+              </div>
+            </section>
+
+            <aside class="page-navigation">
+              <h5>On This Page</h5>
+              <ul>
+                <li>
+                  <a href="#grid-20-80">Grid 20-80</a>
+                </li>
+                <li>
+                  <a href="#grid-50-50">Grid 50-50</a>
+                </li>
+                <li>
+                  <a href="#grid-three-column">Grid three column</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </main>
+      </div>
+
+      <!-- footer -->
+      <div class="docs footer-wrapper bg-secondary txt-white txt-center">
+        <footer class="py-2">
+          <p>Made with &lt;/&gt; by Kaustubh</p>
+          <div class="social-links">
+            <a href="https://twitter.com/erkaustubhjoshi" class="mr-sm"
+              ><i class="fab fa-twitter-square" title="Twitter"></i
+            ></a>
+            <a href="https://github.com/kaustubh-joshi1/" class="mr-sm"
+              ><i class="fab fa-github-square" title="Github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/kaustubh-joshi-88173b224/"
+              ><i class="fab fa-linkedin" title="LinkedIn"></i
+            ></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="./js/navbar.js" defer></script>
+    <script src="./js/sidenav.js" defer></script>
+  </body>
+</html>

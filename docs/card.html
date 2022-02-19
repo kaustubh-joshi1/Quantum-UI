@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Rowdies:wght@300;400;700&family=Source+Code+Pro:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- component styles -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Quantum UI | Get Started</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper py-sm">
+        <header class="header max-1200-center p-1">
+          <div class="logo-wrapper">
+            <a href="../index.html" class="logo">
+              <i class="fas fa-spinner"></i> Quantum
+            </a>
+
+            <button class="menu-btn">
+              <i class="fas fa-2x fa-bars" title="Menu"></i>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li class="m-sm">
+                <a href="../index.html" class="border-10">Home</a>
+              </li>
+              <li class="m-sm active">
+                <a href="./get-started.html" class="border-10">Docs</a>
+              </li>
+              <li class="m-sm">
+                <a href="https://github.com/kaustubh-joshi1/" class="border-10">
+                  <i class="fab fa-github-square"></i
+                ></a>
+              </li>
+            </ul>
+
+            <button class="navbar-close-btn">
+              <i class="far fa-2x fa-times-circle" class="border-10"></i>
+              <span class="visually-hidden">Close</span>
+            </button>
+          </nav>
+        </header>
+      </div>
+
+      <!-- main section -->
+      <div class="main-wrapper mx-1 mt-1">
+        <main class="docs-main">
+          <aside class="aside-nav py-1 mt-2">
+            <nav
+              class="aside-navigation pl-sm"
+              aria-label="secondary-navigation"
+            >
+              <ul>
+                <li class="component-dropdown py-sm">
+                  Menu
+                  <span class="dropdown-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Get Started</h5>
+                </li>
+
+                <li>
+                  <a href="./get-started.html">Installation</a>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Components</h5>
+                  <ul>
+                    <li class="m-sm">
+                      <a href="./avatar.html">Avatar</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./alert.html">Alert</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./badge.html">Badge</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./button.html">Button</a>
+                    </li>
+                    <li class="m-sm active">
+                      <a href="./card.html">Card</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./image.html">Image</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./form.html">Forms</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./typography.html">Typograhy</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./snackbar.html">Snackbar</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./grid.html">Grid</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./navigation.html">Navigation</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="main-content">
+            <section>
+              <div>
+                <h1>Card</h1>
+
+                <p>
+                  Card are used to show user related data collectively, like
+                  product details. Cards takes 100% width of their parent, to
+                  give specific widht, wrap the card inside the container and
+                  add width to that container.
+                </p>
+              </div>
+
+              <section>
+                <h2 id="horizontal-card">Horizantal Card</h2>
+
+                <p>
+                  Quantum provides two types of horizontal card. Card with image
+                  in center and card with image at the top of the card. You need
+                  to add <code>img-top</code> class to make the image appear at
+                  the top, by default it is in center.
+                </p>
+
+                <div class="demo-container">
+                  <article
+                    class="card card-horizontal p-1 border-md box-shadow"
+                    style="color: #000"
+                  >
+                    <div class="card-image">
+                      <img
+                        class="img-responsive"
+                        src="../assets/bold-fit.jpeg"
+                        alt="product image"
+                      />
+                    </div>
+                    <div class="card-body ml-1">
+                      <h4 class="card-title">BOLDFIT Yoga and Exercise Mat</h4>
+                      <small class="txt-secondary">Sold by Bold-Fit</small>
+                      <p class="txt-rg">
+                        Bold Fit yoga mat comforts and supports your fitness
+                        routine wherever you would like to workout. A wide
+                        surface with texture design provides safety, traction
+                        and balance.
+                      </p>
+
+                      <div class="price-container mb-1">
+                        <span class="txt-md mr-1 txt-bold">₹999</span>
+                        <span class="txt-strike-through txt-secondary mr-1"
+                          >₹1,799</span
+                        >
+                        <span class="discount-percent txt-rg">44% off</span>
+                      </div>
+
+                      <div class="card-btn-container">
+                        <button class="btn btn-primary">
+                          <i
+                            class="fas fa-shopping-cart"
+                            aria-hidden="true"
+                          ></i>
+                          <span>Add to Cart</span>
+                        </button>
+
+                        <button class="btn btn-secondary-outline">
+                          <span>Save for later</span>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+
+                  <!-- image at top -->
+                  <article
+                    class="card card-horizontal p-1 img-top border-md box-shadow"
+                    style="color: #000"
+                  >
+                    <div class="card-image">
+                      <img
+                        class="img-responsive"
+                        src="../assets/bold-fit.jpeg"
+                        alt="product image"
+                      />
+                    </div>
+                    <div class="card-body ml-1">
+                      <h4 class="card-title">BOLDFIT Yoga and Exercise Mat</h4>
+                      <small class="txt-secondary">Sold by Bold-Fit</small>
+                      <p class="txt-rg">
+                        Bold Fit yoga mat comforts and supports your fitness
+                        routine wherever you would like to workout. A wide
+                        surface with texture design provides safety, traction
+                        and balance.
+                      </p>
+
+                      <div class="price-container mb-1">
+                        <span class="txt-md mr-1 txt-bold">₹999</span>
+                        <span class="txt-strike-through txt-secondary mr-1"
+                          >₹1,799</span
+                        >
+                        <span class="discount-percent txt-rg">44% off</span>
+                      </div>
+
+                      <div class="card-btn-container">
+                        <button class="btn btn-primary">
+                          <i
+                            class="fas fa-shopping-cart"
+                            aria-hidden="true"
+                          ></i>
+                          <span>Add to Cart</span>
+                        </button>
+
+                        <button class="btn btn-secondary-outline">
+                          <span>Save for later</span>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/3c235dd9d72ab933da6e4274eca58804.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="vertical-card">Vertical Card</h2>
+
+                <p>
+                  Add <code>card-vertical</code> class for the vertical card,
+                  everything remains the same.
+                </p>
+
+                <div class="demo-container">
+                  <article
+                    class="card card-vertical p-1 border-md img-top"
+                    style="color: #000"
+                  >
+                    <div class="card-image">
+                      <img
+                        class="img-responsive"
+                        src="../assets/bold-fit.jpeg"
+                        alt="product image"
+                      />
+                    </div>
+                    <div class="card-body ml-1">
+                      <h4 class="card-title">BOLDFIT Yoga and Exercise Mat</h4>
+                      <small class="txt-secondary">Sold by Bold-Fit</small>
+                      <p class="txt-rg">
+                        Bold Fit yoga mat comforts and supports your fitness
+                        routine wherever you would like to workout. A wide
+                        surface with texture design provides safety, traction
+                        and balance.
+                      </p>
+
+                      <div class="price-container mb-1">
+                        <span class="txt-md mr-1 txt-bold">₹999</span>
+                        <span class="txt-strike-through txt-secondary mr-1"
+                          >₹1,799</span
+                        >
+                        <span class="discount-percent p-rg">44% off</span>
+                      </div>
+
+                      <div class="card-btn-container">
+                        <button class="btn btn-primary">
+                          <i class="fas fa-shopping-cart"></i>
+                          <span>Add to Cart</span>
+                        </button>
+
+                        <button class="btn btn-secondary-outline">
+                          <span>Save for later</span>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/c62f108b63b2f8e867bdca656a3aa136.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="card-with-text-overlay">Card with text overlay</h2>
+
+                <p>
+                  Card with text overlay can be used to add status information
+                  about the product such as out of stock.
+                </p>
+
+                <div class="demo-container">
+                  <article
+                    class="card card-vertical card-overlay p-1 border-md"
+                    style="color: #000"
+                  >
+                    <div class="overlay-container">
+                      <div class="card-image">
+                        <img
+                          class="img-responsive"
+                          src="../assets/bold-fit.jpeg"
+                          alt="product image"
+                        />
+                      </div>
+                      <div class="card-body ml-1">
+                        <h4 class="card-title">
+                          BOLDFIT Yoga and Exercise Mat
+                        </h4>
+                        <small class="txt-secondary">Sold by Bold-Fit</small>
+                        <p class="txt-rg">
+                          Bold Fit yoga mat comforts and supports your fitness
+                          routine wherever you would like to workout. A wide
+                          surface with texture design provides safety, traction
+                          and balance.
+                        </p>
+
+                        <div class="price-container mb-1">
+                          <span class="txt-md mr-1 txt-bold">₹999</span>
+                          <span class="txt-strike-through txt-secondary mr-1"
+                            >₹1,799</span
+                          >
+                          <span class="discount-percent txt-rg">17% off</span>
+                        </div>
+
+                        <div class="card-btn-container">
+                          <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Add to Cart</span>
+                          </button>
+
+                          <button class="btn btn-secondary-outline">
+                            <span>Save for later</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="overlay-text txt-lg txt-white border-md">
+                      <span class="p-1 border-md"> OUT OF STOCK </span>
+                    </div>
+                  </article>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/5892d4f9fbb8d9c113c869812f23c3bb.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="text-only-card">Text only Card</h2>
+
+                <p>
+                  Text only card don't contain image. Infomation is conveyed
+                  only using text.
+                </p>
+
+                <div class="demo-container">
+                  <article
+                    class="card card-vertical p-1 border-md"
+                    style="color: #000"
+                  >
+                    <div class="card-body">
+                      <h4 class="card-title">BOLDFIT Yoga and Exercise Mat</h4>
+                      <small class="txt-secondary">Sold by Bold-Fit</small>
+                      <p class="txt-rg">
+                        Bold Fit yoga mat comforts and supports your fitness
+                        routine wherever you would like to workout. A wide
+                        surface with texture design provides safety, traction
+                        and balance.
+                      </p>
+
+                      <div class="price-container mb-1">
+                        <span class="txt-lg mr-1 txt-bold">₹999</span>
+                        <span class="txt-strike-through txt-secondary mr-1"
+                          >₹1,799</span
+                        >
+                        <span class="discount-percent">44% off</span>
+                      </div>
+
+                      <div class="card-btn-container">
+                        <button class="btn btn-primary">
+                          <i
+                            class="fas fa-shopping-cart"
+                            aria-hidden="true"
+                          ></i>
+                          <span>Add to Cart</span>
+                        </button>
+
+                        <button class="btn btn-secondary-outline">
+                          <span>Save for later</span>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/300154901626d3f0cb5bd5b8df5014ee.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="card-with-dismiss">Card With Dismiss</h2>
+
+                <p>
+                  You can use card with dismiss if you want the feature where
+                  user is able to dismiss the card.
+                </p>
+
+                <div class="demo-container">
+                  <article
+                    class="card card-vertical p-1 border-md card-dismiss"
+                    style="color: #000"
+                  >
+                    <div class="card-image">
+                      <img
+                        class="img-responsive"
+                        src="../assets/bold-fit.jpeg"
+                        alt="product image"
+                      />
+                    </div>
+
+                    <div class="card-body ml-1">
+                      <h4 class="card-title">BOLDFIT Yoga and Exercise Mat</h4>
+                      <small class="txt-secondary">Sold by Bold-Fit</small>
+                      <p class="txt-rg">
+                        Bold Fit yoga mat comforts and supports your fitness
+                        routine wherever you would like to workout. A wide
+                        surface with texture design provides safety, traction
+                        and balance.
+                      </p>
+
+                      <div class="price-container mb-1">
+                        <span class="txt-md mr-1 txt-bold">₹999</span>
+                        <span class="txt-strike-through txt-secondary mr-1"
+                          >₹1,799</span
+                        >
+                        <span class="discount-percent">44% off</span>
+                      </div>
+
+                      <div class="card-btn-container">
+                        <button class="btn btn-primary">
+                          <i
+                            class="fas fa-shopping-cart"
+                            aria-hidden="true"
+                          ></i>
+                          <span>Add to Cart</span>
+                        </button>
+
+                        <button class="btn btn-secondary-outline">
+                          <span>Save for later</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <button class="btn card-dismiss-btn">
+                      <i class="far fa-times-circle" title="dismis"></i>
+                    </button>
+                  </article>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/557f664a28e966fb77ca560b5767f88f.js"></script>
+                  </code>
+                </figure>
+
+                <p class="h4">JavaScript Code</p>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/66723b85f3c5e6141a66e0211e78ebf2.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <div class="next-pre-btns">
+                <a href="./button.html">
+                  <span><i class="fas fa-chevron-left"></i></span>
+                  Button
+                </a>
+                <a href="./image.html" class="ml-auto">
+                  Image
+                  <span><i class="fas fa-chevron-right"></i></span>
+                </a>
+              </div>
+            </section>
+
+            <aside class="page-navigation">
+              <h5>On This Page</h5>
+              <ul>
+                <li>
+                  <a href="#horizontal-card">Horizontal Card</a>
+                </li>
+
+                <li>
+                  <a href="#vertical-card">Vertical Card</a>
+                </li>
+
+                <li>
+                  <a href="#card-with-text-overlay">Card with text overlay</a>
+                </li>
+
+                <li>
+                  <a href="#text-only-card">Text only card</a>
+                </li>
+
+                <li>
+                  <a href="#card-with-dismiss">Card with dismiss</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </main>
+      </div>
+
+      <!-- footer -->
+      <div class="docs footer-wrapper bg-secondary txt-white txt-center">
+        <footer class="py-2">
+          <p>Made with &lt;/&gt; by Kaustubh</p>
+          <div class="social-links">
+            <a href="https://twitter.com/erkaustubhjoshi" class="mr-sm"
+              ><i class="fab fa-twitter-square" title="Twitter"></i
+            ></a>
+            <a href="https://github.com/kaustubh-joshi1/" class="mr-sm"
+              ><i class="fab fa-github-square" title="Github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/kaustubh-joshi-88173b224/"
+              ><i class="fab fa-linkedin" title="LinkedIn"></i
+            ></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="./js/navbar.js" defer></script>
+    <script src="./js/sidenav.js" defer></script>
+    <script src="../components/js/card-dismiss.js"></script>
+  </body>
+</html>

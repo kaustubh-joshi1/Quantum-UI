@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Rowdies:wght@300;400;700&family=Source+Code+Pro:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
+
+:root {
+  font-weight: 500;
+  --primary-dark-color: #c957bc;
+  --primary-darker-color: #752092;
+  --primary-color: #a747db;
+  --primary-light-color: #dc9ffd;
+
+  --secondary-color: #1f2937;
+  --secondary-light-color: #3b4e68;
+
+  --secondary-hover-color: #f3f4f6;
+
+  --complementary-color: #96fc5f;
+
+  /* --background-color: #ddebd6; */
+  --background-color: #dae2d2;
+  --text-hover-background: #7952b316;
+
+  --text-primary: #111827;
+  --text-gray: #6b7280;
+  --text-white: #fff;
+
+  --size-16: 2.75rem;
+  --size-15: 2.5rem;
+  --size-14: 2.25rem;
+  --size-13: 2rem;
+  --size-12: 1.75rem;
+  --size-11: 1.5rem;
+  --size-10: 1.25rem;
+  --size-9: 1rem;
+  --size-8: 0.875rem;
+  --size-7: 0.75rem;
+  --size-6: 0.625rem;
+  --size-5: 0.5rem;
+  --size-4: 0.375rem;
+  --size-3: 0.25rem;
+  --size-2: 0.125rem;
+  --size-1: 1px;
+  --size-0: 0;
+
+  --logo-font-family: "Rowdies", cursive;
+  --primary-font-family: "Ubuntu", sans-serif;
+  --secondary-font-family: "Roboto", sans-serif;
+
+  --fira-code: "Source Code Pro", monospace;
+}
+
+.visually-hidden {
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -500px;
+  width: 1px;
+}
+
+/* all icons font-size should be 30px */
+
+[class^="fab"] {
+  font-size: 30px;
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Rowdies:wght@300;400;700&family=Source+Code+Pro:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- component styles -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Quantum UI | Get Started</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper py-sm">
+        <header class="header max-1200-center p-1">
+          <div class="logo-wrapper">
+            <a href="../index.html" class="logo">
+              <i class="fas fa-spinner"></i> Quantum
+            </a>
+
+            <button class="menu-btn">
+              <i class="fas fa-2x fa-bars" title="Menu"></i>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li class="m-sm">
+                <a href="../index.html" class="border-10">Home</a>
+              </li>
+              <li class="m-sm active">
+                <a href="./get-started.html" class="border-10">Docs</a>
+              </li>
+              <li class="m-sm">
+                <a href="https://github.com/kaustubh-joshi1/" class="border-10">
+                  <i class="fab fa-github-square"></i
+                ></a>
+              </li>
+            </ul>
+
+            <button class="navbar-close-btn">
+              <i class="far fa-2x fa-times-circle" class="border-10"></i>
+              <span class="visually-hidden">Close</span>
+            </button>
+          </nav>
+        </header>
+      </div>
+
+      <!-- main section -->
+      <div class="main-wrapper mx-1 mt-1">
+        <main class="docs-main">
+          <!-- aside bar -->
+          <aside class="aside-nav py-1 mt-2">
+            <nav
+              class="aside-navigation pl-sm"
+              aria-label="secondary-navigation"
+            >
+              <ul>
+                <li class="component-dropdown py-sm">
+                  Menu
+                  <span class="dropdown-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Get Started</h5>
+                </li>
+
+                <li>
+                  <a href="./get-started.html">Installation</a>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Components</h5>
+                  <ul>
+                    <li class="m-sm active">
+                      <a href="./avatar.html">Avatar</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./alert.html">Alert</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./badge.html">Badge</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./button.html">Button</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./card.html">Card</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./image.html">Image</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./form.html">Forms</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./typography.html">Typograhy</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./snackbar.html">Snackbar</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./grid.html">Grid</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./navigation.html">Navigation</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <!-- main content -->
+          <div class="main-content">
+            <section>
+              <div>
+                <h1>Avatar</h1>
+
+                <p>
+                  Avatars are images that users can set as their profile
+                  picture. Avatars are mostly used on navigation bar, on account
+                  information page, and on signup /sign in page.
+                </p>
+
+                <p>
+                  Quantum UI provides two type of avatars viz. image, and text
+                  with four different sizes which are large, medium, small and
+                  extra small.
+                </p>
+              </div>
+
+              <section>
+                <h2 id="image-avatar">Image Avatar</h2>
+
+                <p>
+                  You can use <code>avatar</code> class with contextual classes
+                  to add size to the avatars. For example, if you want an image
+                  avatar of medium size you can use
+                  <code>class="avatar avatar-md</code>. By default avatars are
+                  shaped as circle. Don't forget to add
+                  <code>img-responsive</code> and <code>img-round</code> class
+                  to <code>img</code> element.
+                </p>
+
+                <h3 id="round-image-avatar">Round Image Avatar</h3>
+                <div class="demo-container">
+                  <figure class="avatar avatar-lg">
+                    <img
+                      class="img-responsive img-round"
+                      src="../assets/avatar.webp"
+                      alt="avatar"
+                    />
+                  </figure>
+
+                  <figure class="avatar avatar-md">
+                    <img
+                      class="img-responsive img-round"
+                      src="../assets/avatar.webp"
+                      alt="avatar"
+                    />
+                  </figure>
+
+                  <figure class="avatar avatar-sm">
+                    <img
+                      class="img-responsive img-round"
+                      src="../assets/avatar.webp"
+                      alt="avatar"
+                    />
+                  </figure>
+
+                  <figure class="avatar avatar-xs">
+                    <img
+                      class="img-responsive img-round"
+                      src="../assets/avatar.webp"
+                      alt="avatar"
+                    />
+                  </figure>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/78e954378f76eb75dc556e10a640d3fc.js"></script>
+                  </code>
+                </figure>
+
+                <h3 id="square-image-avatar">Square Image Avatar</h3>
+
+                <p>Use <code>avatar-sq</code> class to make avatar square.</p>
+
+                <div class="demo-container">
+                  <figure class="avatar-sq avatar-lg">
+                    <img
+                      class="img-responsive"
+                      src="../assets/avatar4.png"
+                      alt="avatar"
+                    />
+                  </figure>
+
+                  <figure class="avatar-sq avatar-md">
+                    <img
+                      class="img-responsive"
+                      src="../assets/avatar4.png"
+                      alt="avatar"
+                    />
+                  </figure>
+
+                  <figure class="avatar-sq avatar-sm">
+                    <img
+                      class="img-responsive"
+                      src="../assets/avatar4.png"
+                      alt="avatar"
+                    />
+                  </figure>
+
+                  <figure class="avatar-sq avatar-xs">
+                    <img
+                      class="img-responsive"
+                      src="../assets/avatar4.png"
+                      alt="avatar"
+                    />
+                  </figure>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/71c3fec0f3bf00c53817ebdab17bbaab.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="text-avatar">Text Avatar</h2>
+
+                <p>
+                  In text avatar you can use initials of the user or their first
+                  or last name. You need to add <code>avatar-text</code> class
+                  along with the size contextual classes.
+                </p>
+
+                <div class="demo-container">
+                  <div class="avatar-text avatar-lg">
+                    <span>John</span>
+                  </div>
+
+                  <div class="avatar-text avatar-md">
+                    <span>JD</span>
+                  </div>
+
+                  <div class="avatar-text avatar-sm">
+                    <span>Doe</span>
+                  </div>
+
+                  <div class="avatar-text avatar-xs">
+                    <span>RJ</span>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/4d1b8fac68c76395e6963651ed81f5c4.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <div class="next-pre-btns">
+                <a href="./get-started.html">
+                  <span><i class="fas fa-chevron-left"></i></span>
+                  Get Started
+                </a>
+                <a href="./alert.html" class="ml-auto">
+                  Alert
+                  <span><i class="fas fa-chevron-right"></i></span>
+                </a>
+              </div>
+            </section>
+
+            <!-- page navigation -->
+            <aside class="page-navigation">
+              <h5>On This Page</h5>
+              <ul>
+                <li>
+                  <a href="#image-avatar">Image Avatar</a>
+                </li>
+
+                <li class="pl-sm">
+                  <a href="#round-image-avatar">Round Image Avatar</a>
+                </li>
+
+                <li class="pl-sm">
+                  <a href="#square-image-avatar">Square Image Avatar</a>
+                </li>
+
+                <li>
+                  <a href="#text-avatar">Text Avatar</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </main>
+      </div>
+
+      <!-- footer -->
+      <div class="docs footer-wrapper bg-secondary txt-white txt-center">
+        <footer class="py-2">
+          <p>Made with &lt;/&gt; by Kaustubh</p>
+          <div class="social-links">
+            <a href="https://twitter.com/erkaustubhjoshi" class="mr-sm"
+              ><i class="fab fa-twitter-square" title="Twitter"></i
+            ></a>
+            <a href="https://github.com/kaustubh-joshi1/" class="mr-sm"
+              ><i class="fab fa-github-square" title="Github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/kaustubh-joshi-88173b224/"
+              ><i class="fab fa-linkedin" title="LinkedIn"></i
+            ></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="./js/navbar.js" defer></script>
+    <script src="./js/sidenav.js" defer></script>
+  </body>
+</html>

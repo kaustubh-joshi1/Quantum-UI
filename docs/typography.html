@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Rowdies:wght@300;400;700&family=Source+Code+Pro:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- component styles -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Quantum UI | Get Started</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper py-sm">
+        <header class="header max-1200-center p-1">
+          <div class="logo-wrapper">
+            <a href="../index.html" class="logo">
+              <i class="fas fa-spinner"></i> Quantum
+            </a>
+
+            <button class="menu-btn">
+              <i class="fas fa-2x fa-bars" title="Menu"></i>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li class="m-sm">
+                <a href="../index.html" class="border-10">Home</a>
+              </li>
+              <li class="m-sm active">
+                <a href="./get-started.html" class="border-10">Docs</a>
+              </li>
+              <li class="m-sm">
+                <a href="https://github.com/kaustubh-joshi1/" class="border-10">
+                  <i class="fab fa-github-square"></i
+                ></a>
+              </li>
+            </ul>
+
+            <button class="navbar-close-btn">
+              <i class="far fa-2x fa-times-circle" class="border-10"></i>
+              <span class="visually-hidden">Close</span>
+            </button>
+          </nav>
+        </header>
+      </div>
+
+      <!-- main section -->
+      <div class="main-wrapper mx-1 mt-1">
+        <main class="docs-main">
+          <aside class="aside-nav py-1 mt-2">
+            <nav
+              class="aside-navigation pl-sm"
+              aria-label="secondary-navigation"
+            >
+              <ul>
+                <li class="component-dropdown py-sm">
+                  Menu
+                  <span class="dropdown-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Get Started</h5>
+                </li>
+
+                <li>
+                  <a href="./get-started.html">Installation</a>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Components</h5>
+                  <ul>
+                    <li class="m-sm">
+                      <a href="./avatar.html">Avatar</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./alert.html">Alert</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./badge.html">Badge</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./button.html">Button</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./card.html">Card</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./image.html">Image</a>
+                    </li>
+                    <li class="m-sm">
+                      <a href="./form.html">Forms</a>
+                    </li>
+                    <li class="m-sm active">
+                      <a href="./typography.html">Typograhy</a>
+                    </li>
+
+                    <li class="m-sm">
+                      <a href="./snackbar.html">Snackbar</a>
+                    </li>
+
+                    <li class="m-sm">
+                      <a href="./grid.html">Grid</a>
+                    </li>
+
+                    <li class="m-sm">
+                      <a href="./navigation.html">Navigation</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="main-content">
+            <section>
+              <div>
+                <h1>Typograhy</h1>
+
+                <p>
+                  Quantum UI provides various text utility classes for
+                  typography.
+                </p>
+              </div>
+
+              <section>
+                <h2 id="headings">Headings</h2>
+
+                <p>
+                  You can use semantic heading tag in your HTML and our styles
+                  will be applied.
+                </p>
+
+                <div class="demo-container">
+                  <div class="typography-container">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/0f41f3359585dcb6fc481885f7b624fe.js"></script>
+                  </code>
+                </figure>
+
+                <p>
+                  You can use also use heading classes to apply the same styles
+                  where the semantic elements can't be used. Heading classes
+                  <code>.h1</code> to <code> .h6 </code> can be used.
+                </p>
+
+                <div class="demo-container">
+                  <div class="typography-container">
+                    <p class="h1">Class heading 1</p>
+                    <p class="h2">Class heading 2</p>
+                    <p class="h3">Class heading 3</p>
+                    <p class="h4">Class Heading 4</p>
+                    <p class="h5">Class heading 5</p>
+                    <p class="h6">Class heading 6</p>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/462c685627ea4affc6e612a717d0963e.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="text-utility-classes">Text Utility Classes</h2>
+
+                <p>
+                  Quantum UI provided multiple utility classes for text sizes,
+                  font weights, text decoration and color.
+                </p>
+
+                <h3 id="text-sizes">Text Sizes</h3>
+
+                <p>
+                  You can use <code>.txt-lg</code> class for large size text,
+                  <code>.txt-md</code> class for medium size text,
+                  <code>.txt-rg</code> class for regular size text, and
+                  <code>.txt-sm</code> class for small size text.
+                </p>
+
+                <div class="demo-container">
+                  <div class="typography-container">
+                    <p class="txt-lg">Large Text</p>
+
+                    <p class="txt-md">Medium Text</p>
+
+                    <p class="txt-rg">Regular Text</p>
+
+                    <p class="txt-sm">Small Text</p>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/24ecba93a3831c9d785e30d3e3607d4f.js"></script>
+                  </code>
+                </figure>
+
+                <h3 id="text-weights">Text Weights</h3>
+
+                <p>
+                  Font weights varied from 300 to 900. Quantum UI has
+                  <code>.txt-light</code> class for font weight 300,
+                  <code>.txt-regular</code> for 400,
+                  <code>.txt-semibold</code> for 600, <code>.txt-bold</code> for
+                  700, and <code>.txt-black</code> for font weight 900.
+                </p>
+
+                <div class="demo-container">
+                  <div class="typography-container">
+                    <p class="txt-light">Light Text</p>
+
+                    <p class="txt-regular">Regular Text</p>
+
+                    <p class="txt-semibold">Semibold Text</p>
+
+                    <p class="txt-bold">Bold Text</p>
+
+                    <p class="txt-black">Black Text</p>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/7b32c92f47f4d5398897e9635901ed66.js"></script>
+                  </code>
+                </figure>
+
+                <h3 id="text-decoration">Text decoration and alignment</h3>
+
+                <p>
+                  To make your text gray/ secondary use
+                  <code>.txt-secondary</code> class. You can make your text
+                  white using <code>.txt-white</code> class.
+                  <code> .txt-strike-through </code> applies line-through your
+                  text.
+                </p>
+
+                <p>
+                  You can center your text using <code>.txt-center</code> class
+                  and align to right using <code>.txt-right</code> class.
+                </p>
+
+                <div class="demo-container">
+                  <div class="typography-container">
+                    <p class="txt-secondary">Gray Text</p>
+
+                    <p class="txt-strike-through">Strike through text</p>
+
+                    <p class="txt-center">Centered text</p>
+
+                    <p class="txt-right">Text aligned right.</p>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <code>
+                    <script src="https://gist.github.com/junaidshaikh-js/dda2b88f2aa3226176699f72c1cb9517.js"></script>
+                  </code>
+                </figure>
+              </section>
+
+              <div class="next-pre-btns">
+                <a href="./form.html">
+                  <span><i class="fas fa-chevron-left"></i></span>
+                  Form
+                </a>
+
+                <a href="./snackbar.html">
+                  Snackbar
+                  <span><i class="fas fa-chevron-right"></i></span>
+                </a>
+              </div>
+            </section>
+
+            <aside class="page-navigation">
+              <h5>On This Page</h5>
+              <ul>
+                <li>
+                  <a href="#headings">Headings</a>
+                </li>
+
+                <li>
+                  <a href="#text-utility-classes">Text Utility Classes</a>
+                </li>
+
+                <li class="pl-sm">
+                  <a href="#text-sizes">Text Sizes</a>
+                </li>
+
+                <li class="pl-sm">
+                  <a href="#text-weights">Text Weights</a>
+                </li>
+
+                <li class="pl-sm">
+                  <a href="#text-decoration">Text decoration and alignment</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </main>
+      </div>
+
+      <!-- footer -->
+      <div class="docs footer-wrapper bg-secondary txt-white txt-center">
+        <footer class="py-2">
+          <p>Made with &lt;/&gt; by Kaustubh</p>
+          <div class="social-links">
+            <a href="https://twitter.com/erkaustubhjoshi" class="mr-sm"
+              ><i class="fab fa-twitter-square" title="Twitter"></i
+            ></a>
+            <a href="https://github.com/kaustubh-joshi1/" class="mr-sm"
+              ><i class="fab fa-github-square" title="Github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/kaustubh-joshi-88173b224/"
+              ><i class="fab fa-linkedin" title="LinkedIn"></i
+            ></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="./js/navbar.js" defer></script>
+    <script src="./js/sidenav.js" defer></script>
+  </body>
+</html>
